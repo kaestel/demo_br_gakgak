@@ -1,0 +1,56 @@
+/* General form styles */
+form {display: block;}
+fieldset {border: 0; margin: 0; padding: 0;}
+label {display: none;}
+
+input.text,
+textarea,
+.button.submit {border: 0; padding: 0; margin: 0; background: transparent; color: #686868; font-size: 14px;}
+
+input.text {line-height: 34px; height: 34px; display: block;}
+.button.submit {text-indent: -5000px; cursor: pointer;}
+
+
+/* Tip a friend form */
+.overlay.tip {}
+.overlay.tip .scene {position: relative; width: 100%; height: 100%; background: transparent url(../../img/bg_tip.png) no-repeat top center}
+
+.overlay.tip input.text,
+.overlay.tip textarea {position: absolute; width: 383px; left: 285px;}
+.overlay.tip input.name {top: 174px;}
+.overlay.tip input.email {top: 238px;}
+.overlay.tip input.friend_name {top: 301px;}
+.overlay.tip input.friend_email {top: 365px;}
+.overlay.tip textarea {width: 391px; height: 75px; top: 430px; line-height: 19px;}
+
+.overlay.tip .button.submit {position: absolute; width: 145px; height: 67px; top: 522px; left: 538px;}
+.overlay.tip .close {position: absolute; top: 101px; left: 663px; width: 50px; height: 50px;}
+.overlay.tip .close a {display: block; height: 100%; text-indent: -9999px;}
+
+
+/* Participant form */
+#content.participant {}
+#content.participant .scene {position: relative; width: 100%; height: 100%; background: transparent url(../../img/bg_participant.png) no-repeat top center}
+#content.participant h1 {background-position: top left;}
+
+#content.participant input.text,
+#content.participant textarea {position: absolute; left: 387px;}
+#content.participant input.name {width: 278px; top: 189px;}
+#content.participant input.age {width: 72px; top: 189px; left: 699px;}
+#content.participant textarea.address {width: 385px; height: 55px; top: 259px;}
+#content.participant input.postal {width: 174px; top: 343px;}
+#content.participant input.city {width: 174px; top: 343px; left: 598px;}
+#content.participant input.phone {width: 174px; top: 407px;}
+#content.participant input.email {width: 174px; top: 407px; left: 598px;}
+
+#content.participant label.radio_label {position: absolute; top: 467px; display: block; width: 65px; height: 35px; cursor: pointer; overflow: hidden; text-indent: -5000px;}
+#content.participant #member_input_yes_label {left: 377px;}
+#content.participant #member_input_no_label {left: 452px;}
+#content.participant label.radio_label.checked {background: url(../../img/bg_radio_select.png) no-repeat 31px 9px;}
+#content.participant #member_input_yes_label.checked {background: url(../../img/bg_radio_select.png) no-repeat 31px 9px;}
+#content.participant #member_input_no_label.checked {background-position: 43px 9px;}
+
+#content.participant p {text-indent: -5000px;}
+
+#content.participant #form_error {display: none; background: url(../../img/bg_form_error.png) no-repeat; width: 245px; height: 30px; position: absolute; top: 468px; left: 539px; text-indent: -5000px;}
+#content.participant .button.submit {position: absolute; width: 145px; height: 67px; top: 526px; left: 650px;}

@@ -1,0 +1,198 @@
+#page {position: absolute; left: 50%; top: 50%; margin-left: -477px; margin-top: -336px; width: 955px; height: 672px; z-index: 2;
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#content {width: 955px; height: 672px; position: relative;
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#content .overlay {position: absolute; left: 0; top: 0px; width: 955px; height: 672px; z-index: 100;}
+#content .overlay .scene {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+
+
+h2 {font-family: "VAGRoundedBoldRegular"; color: #dd0305; font-size: 24px;}
+
+#content {background: transparent url(../../img/bg_scene.jpg) no-repeat center center;} 
+#content.front {background: transparent url(../../img/bg_front.jpg) no-repeat center center;}
+
+#content h1 {position: absolute; top: 105px; height: 26px; width: 100%; text-indent: -9999px;}
+#content.choose h1 {background: url(../../img/bg_header_choose.png) no-repeat top center;}
+#content.picked h1 {background: url(../../img/bg_header_picked.png) no-repeat top center;}
+#content.thanks h1 {background: url(../../img/bg_header_thanks.png) no-repeat top center;}
+#content.participant h1 {background: url(../../img/bg_header_participant.png) no-repeat top center;}
+#content.dressgame h1 {background: url(../../img/bg_header_dressgame.png) no-repeat top center;}
+
+.back {position: absolute; height: 54px; width: 70px; background: transparent url(../../img/bg_back.png) no-repeat top center; top: 592px; left: 55px;}
+.back a {display: block; height: 100%; text-indent: -9999px;}
+
+.logo {position: absolute; height: 119px; width: 135px; top: 60px; left: 55px; z-index: 100;}
+.logo a {display: block; height: 100%; text-indent: -9999px;}
+
+.costumes {display: none;}
+
+
+
+/* CHOOSE */
+.choose ul.picker {position: absolute; left: 356px; top: 139px; width: 194px; height: 372px; padding: 25px; background: transparent url(../../img/bg_mirror.png) no-repeat top center;}
+.choose ul.picker li {position: absolute; left: 25px; top: 25px; width: 194px; height: 372px; overflow: hidden;}
+.choose ul.picker li.header {z-index: 10;}
+.choose ul.picker li.body {z-index: 8;}
+.choose ul.picker li.footer {z-index: 6;}
+.choose ul.picker ul {width: 194px; height: 372px; overflow: hidden;}
+.choose ul.picker ul li {float: left; position: static; top: auto; left: auto; text-indent: -9999px;}
+
+.choose .arrows li {background: transparent url(../../img/bg_arrows.png) no-repeat 0px 0px; cursor: pointer; width: 40px; height: 75px; text-indent: -9999px; position: absolute;}
+.choose .arrows li.left {left: 295px;}
+.choose .arrows li.right {background-position: -100px 0px; left: 622px;}
+.choose .arrows .header {top: 164px;}
+.choose .arrows .body {top: 266px;}
+.choose .arrows .footer {top: 368px;}
+.choose .pickertext {position: absolute; top: 596px; left: 150px; text-align: center; width: 670px; background: #e30613;}
+.choose .pickertext p {color: #ffffff; font-family: "NicolasFrespechRegular"; text-transform: uppercase; padding: 7px 10px 8px; font-size: 14px;}
+
+
+
+.start {position: absolute; height: 64px; width: 248px; background: transparent url(../../img/bg_start.png) no-repeat top center; top: 438px; left: 353px;}
+.start a {display: block; height: 100%; text-indent: -9999px;}
+
+
+
+.infobutton {position: absolute; height: 36px; width: 197px; background: transparent url(../../img/bg_infobutton.png) no-repeat top center; top: 338px; left: 76px;}
+.pick {position: absolute; height: 36px; width: 161px; background: transparent url(../../img/bg_pick.png) no-repeat top center; top: 338px; left: 701px;}
+.infobutton a,
+.pick a {display: block; height: 100%; text-indent: -9999px;}
+
+
+
+/* Info page */
+.overlay.info .scene {position: relative; width: 100%; height: 100%; background: transparent url(../../img/bg_info_blank.png) no-repeat top center;}
+.overlay.info .text {position: absolute; top: 151px; left: 208px; width: 535px; height: 430px; overflow: auto; padding-right: 25px;}
+.overlay.info .text p, 
+.overlay.info .text li {font-family: "VAGRoundedLight"; font-size: 14px; color: #686868;}
+.overlay.info .text h2 {padding: 18px 0 8px;}
+.overlay.info .text p {padding-bottom: 15px;}
+.overlay.info .text li {padding-bottom: 10px;}
+.overlay.info .text ol {padding: 0 0 0 3px; margin: 0 0 0 20px;}
+.overlay.info .close {position: absolute; top: 104px; left: 739px; width: 50px; height: 50px;}
+.overlay.info .close a {display: block; height: 100%; text-indent: -9999px;}
+
+
+/* Picked */
+.picked ul.picker {position: absolute; left: 356px; top: 139px; width: 194px; height: 372px; padding: 25px; background: transparent url(../../img/bg_mirror.png) no-repeat top center;}
+.picked ul.picker li {position: absolute; left: 25px; top: 25px; width: 194px; height: 372px; overflow: hidden;}
+.picked .pickertext {position: absolute; top: 596px; left: 150px; text-align: center; width: 670px; background: #e30613;}
+.picked .pickertext p {color: #ffffff; font-family: "NicolasFrespechRegular"; text-transform: uppercase; padding: 7px 10px 8px; font-size: 14px;}
+
+.picked ul.picker li.header {z-index: 10;}
+.picked ul.picker li.body {z-index: 8;}
+.picked ul.picker li.footer {z-index: 6;}
+
+
+.enter {position: absolute; height: 67px; width: 166px; background: transparent url(../../img/bg_enter.png) no-repeat top center; top: 338px; left: 701px;}
+
+.scene .tip,
+.scene .facebook {position: absolute; width: 197px; height: 36px; left: 76px;}
+
+.scene .tip {background: transparent url(../../img/bg_tipbutton.png) no-repeat top center; top: 296px;}
+
+.scene .facebook {background: transparent url(../../img/bg_share.png) no-repeat top center; top: 339px;}
+.picked .scene .infobutton {top: 382px;}
+
+.scene .enter a,
+.scene .tip a,
+.scene .facebook a {display: block; height: 100%; text-indent: -9999px;}
+
+#content.picked ul.picker li {height: 371px;}
+
+
+/* Participant */
+#content.participant h1 {position: absolute; top: 105px; height: 26px; width: 365px; left: 342px; text-indent: -9999px;}
+#content.participant .start,
+#content.thanks .start {position: absolute; height: 386px; width: 287px; background: transparent url(../../img/bg_start_participant.png) no-repeat top center; top: 248px; left: 93px;}
+#content.participant .start a,
+#content.thanks .start a {position: absolute; height: 36px; width: 108px; top: 184px; left: 29px;}
+
+/* Thanks */
+#content.thanks h1 {position: absolute; top: 144px; height: 26px; width: 365px; left: 342px; text-indent: -9999px;}
+.thanks .text {position: absolute; height: 493px; width: 477px; background: transparent url(../../img/bg_thanks.png) no-repeat top center; top: 144px; left: 343px;}
+.thanks .text p {text-indent: -9999px;}
+
+#content.thanks #notmember_link {display: none; position: absolute; top: 160px; left: 30px; width: 300px; height: 20px; overflow: hidden; background: url(../../img/bg_become_member.png) no-repeat;}
+#content.thanks #notmember_link a {display: block; height: 100%;}
+#clubbr {display: none; position: absolute; height: 36px; width: 271px; background: transparent url(../../img/bg_clubbr.png) no-repeat top center; top: 183px; left: 33px;}
+#clubbr a {display: block; height: 100%; text-indent: -9999px;}
+.collection {position: absolute; height: 36px; width: 268px; background: transparent url(../../img/bg_collection.png) no-repeat top center; top: 235px; left: 33px;}
+.collection a {display: block; height: 100%; text-indent: -9999px;}
+.tips {position: absolute; height: 36px; width: 268px; background: transparent url(../../img/bg_tips.png) no-repeat top center; top: 287px; left: 33px;}
+.tips a {display: block; height: 100%; text-indent: -9999px;}
+
+/* Dress game */
+.dressgame .info {position: absolute; height: 384px; width: 248px; background: transparent url(../../img/bg_dressgame_info.png) no-repeat top center; top: 193px; left: 66px;}
+.dressgame .info a {display: block; height: 100%; text-indent: -9999px;}
+.dressgame .info p,
+.dressgame .info h2 {text-indent: -9999px;}
+.dressgame .findcostume {position: absolute; top: 305px; left: 24px; height: 58px; width: 195px;}
+.dressgame .findcostume a {display: block; height: 100%; text-indent: -9999px;}
+
+
+.outfit {position: absolute; height: 405px; width: 218px; top: 194px;}
+
+.outfit.red {background: transparent url(../../img/bg_mirror_red.png) no-repeat top center; left: 363px;}
+.outfit.blue {background: transparent url(../../img/bg_mirror_blue.png) no-repeat top center; left: 600px;}
+
+.outfit.red .sign {z-index: 82; position: absolute; height: 91px; width: 128px; top: -25px; background: transparent url(../../img/bg_sign_red.png) no-repeat top center; left: -25px;}
+.outfit.blue .sign {z-index: 83; position: absolute; height: 91px; width: 128px; top: -25px; background: transparent url(../../img/bg_sign_blue.png) no-repeat top center; left: 125px;}
+
+.outfit.red .frame {z-index: 80; position: absolute; width: 217px; height: 375px; top: 0px; left: 0px; background: transparent url(../../img/bg_mirror_frame_red.png) no-repeat top center;}
+.outfit.blue .frame {z-index: 81; position: absolute; width: 217px; height: 375px;  top: 0; left: 0px; background: transparent url(../../img/bg_mirror_frame_blue.png) no-repeat top center;}
+
+.outfit .frame img {padding: 25px;}
+
+.outfit .pickertext.small {left: 0px; top: 405px; width: 218px; position: absolute; height: 49px;}
+.outfit .pickertext.small p {color: #ffffff; font-family: "NicolasFrespechRegular"; text-transform: uppercase; padding: 7px 5px 8px; font-size: 8px; text-align: center;}
+.outfit.red .pickertext.small {background: #e30613;}
+.outfit.blue .pickertext.small {background: #0386bb;}
+
+.outfit ul.picker {position: relative; width: 167px; height: 325px; padding: 25px;}
+.outfit ul.picker li {position: absolute; left: 12px; top: 1px; width: 194px; height: 372px; overflow: hidden;}
+
+.outfit ul.picker li.header {z-index: 10;}
+.outfit ul.picker li.body {z-index: 8;}
+.outfit ul.picker li.footer {z-index: 6;}
+
+.outfit ul.picker ul {width: 194px; height: 372px; overflow: hidden;}
+.outfit ul.picker ul li {float: left; position: static; top: auto; left: auto; text-indent: -9999px;}
+
+
+.scene.play .info {display: none;}
+
+.dressgame h2 {text-indent: -9999px;}
+
+.scene.play .info,
+.scene.gameover .info {display: none;}
+
+.scene.play .gameclock {display: block;}
+.dressgame .gameclock {display: none; position: absolute; height: 384px; width: 248px; background: transparent url(../../img/bg_gameclock.png) no-repeat top center; top: 192px; left: 65px;}
+
+.dressgame .gameclock .clock {position: absolute; top: 85px; left: 30px; width: 183px; height: 183px;}
+.dressgame .gameclock .clock li {display: none;}
+.dressgame .gameclock .clock li.selected {display: block; height: 100%;}
+.dressgame .gameclock .clock li.full {background: transparent url(../../img/bg_clock_60.png) no-repeat top center;}
+.dressgame .gameclock .clock li.threequaters {background: transparent url(../../img/bg_clock_45.png) no-repeat top center;}
+.dressgame .gameclock .clock li.half {background: transparent url(../../img/bg_clock_30.png) no-repeat top center;}
+.dressgame .gameclock .clock li.quarter {background: transparent url(../../img/bg_clock_15.png) no-repeat top center;}
+.dressgame .gameclock .clock li.empty {background: transparent url(../../img/bg_clock_0.png) no-repeat top center;}
+.dressgame .gameclock .startgame {background: url(../../img/bg_starttime.png) no-repeat; position: absolute; height: 61px; width: 200px; top: 305px; left: 23px;}
+.dressgame .gameclock .startgame a {display: block; height: 100%; text-indent: -9999px;}
+
+.scene.gameover .gameend {display: block;}
+.dressgame .gameend {position: absolute; height: 385px; width: 248px; background: transparent url(../../img/bg_gameover.png) no-repeat top center; top: 193px; left: 65px; display: none;}
+.dressgame .gameend .playover {position: absolute; height: 55px; width: 194px; top: 306px; left: 25px;}
+.dressgame .gameend .playover a {display: block; height: 100%; text-indent: -9999px;}
+

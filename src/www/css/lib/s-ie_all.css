@@ -1,0 +1,12 @@
+.button.submit {
+	*display: block;
+	*font-size: 0;
+	*line-height: 0;
+}
+
+/*#content, #page, */
+.fonts {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"\9;
+	filter: alpha(opacity=0)\9;
+}
+

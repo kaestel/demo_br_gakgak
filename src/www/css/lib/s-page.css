@@ -1,0 +1,29 @@
+* {font-family: Arial, sans-serif; color: #000000;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+}
+
+html {height: 100%;}
+body {margin: 0; height: 100%;}
+
+/* BASE */
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dd, dt, address {padding: 0; margin: 0; font-weight: normal;}
+a {text-decoration: underline; color: #000000; cursor: pointer;
+	-moz-user-select: text;
+}
+a:hover {color: #000000;}
+img {border: 0; display: block;}
+ul {list-style: none;}
+
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+input, select, textarea {font-size: 14px;
+	-moz-user-select: text;
+	-webkit-user-select: text;
+}
+input, textarea {outline: none;}
+
+.fonts {position: absolute; left: 0; top: 0; width: 200px; height: 60px; z-index: 1; opacity: 0;}
+.fonts div {width: 200px;}
+.font_nic {font-family: 'NicolasFrespechRegular';}
+.font_vag_bold {font-family: 'VAGRoundedBoldRegular';}
+.font_vag_light {font-family: 'VAGRoundedLight';}
