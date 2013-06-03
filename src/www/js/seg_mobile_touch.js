@@ -1,9 +1,11 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
 u.version = 5;
 u.bug = function() {}
 u.stats = new function() {this.pageView = function(){};this.event = function(){};this.customVar = function(){}}
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return document.domain.match(/.local$|^w\./);
@@ -110,6 +112,7 @@ Util.listObjectContent = function(object) {
 Util.nodeId = function(node) {
 	return node.id ? node.id : (node.className ? node.className : (node.name ? node.name : node.nodeName));
 }
+/*u-dom.js*/
 Util.getElement = u.ge = function(identifier, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -354,6 +357,7 @@ Util.wrapElement = u.we = function(e, wrap, attributes) {
 	return wrap;
 }
 
+/*u-events.js*/
 Util.Events = u.e = new function() {
 	this.event_pref = typeof(document.ontouchmove) == "undefined" ? "mouse" : "touch";
 	this.kill = function(event) {
@@ -804,6 +808,7 @@ Util.Events = u.e = new function() {
 	}
 }
 
+/*u-init.js*/
 Util.Objects = u.o = new Object();
 Util.init = function() {
 	var i, e, elements, ij_value;
@@ -819,6 +824,7 @@ Util.init = function() {
 }
 u.e.addEvent(window, "load", u.init);
 
+/*i-invalid.js*/
 Util.Objects["validdevice"] = new function() {
 	this.init = function(e) {
 		e.innerHTML = "";

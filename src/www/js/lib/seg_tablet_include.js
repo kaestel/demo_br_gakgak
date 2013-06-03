@@ -1,20 +1,20 @@
-document.write('<script type="text/javascript" src="/js/framework/u.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-debug.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-debug.js"></script>');
 
-document.write('<script type="text/javascript" src="/js/framework/u-dom.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-animation.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-events.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-string.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-system.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-position.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-cookie.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-image.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-timer.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-hash.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-link.js"></script>');
-document.write('<script type="text/javascript" src="/js/framework/u-request.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-dom.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-animation.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-events.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-string.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-system.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-position.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-cookie.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-image.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-timer.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-hash.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-link.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-request.js"></script>');
 
-document.write('<script type="text/javascript" src="/js/framework/u-init-static.js"></script>');
+document.write('<script type="text/javascript" src="/js/jes/src/u-init-static.js"></script>');
 
 document.write('<script type="text/javascript" src="/js/lib/u-form.js"></script>');
 

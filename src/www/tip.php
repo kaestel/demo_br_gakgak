@@ -12,7 +12,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-	<? if($_SESSION["dev_includes"]) { ?>
+	<? if($_SESSION["dev"]) { ?>
 		<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_<?= $_SESSION["segment"] ?>_include.css" />
 		<script type="text/javascript" src="/js/lib/seg_<?= $_SESSION["segment"] ?>_include.js"></script>
 	<? } else { ?>
@@ -34,7 +34,7 @@
 			<div class="scene i:tip">
 
 				<div class="tipafriend">
-					<form action="http://tipafriend.dearapi.com/br_gakgak_fastelavn_2012/" method="post" name="tipafriend">
+					<form action="#" method="post" name="tipafriend">
 						<fieldset>
 							<input type="hidden" name="bodypart_1" value="h_askepot" id="bodypart_1" />
 							<input type="hidden" name="bodypart_2" value="k_askepot" id="bodypart_2" />

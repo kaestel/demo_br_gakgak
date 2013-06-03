@@ -1,9 +1,11 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
 u.version = 5;
 u.bug = function() {}
 u.stats = new function() {this.pageView = function(){};this.event = function(){};this.customVar = function(){}}
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return document.domain.match(/.local$|^w\./);
@@ -110,6 +112,7 @@ Util.listObjectContent = function(object) {
 Util.nodeId = function(node) {
 	return node.id ? node.id : (node.className ? node.className : (node.name ? node.name : node.nodeName));
 }
+/*u-dom.js*/
 Util.getElement = u.ge = function(identifier, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -354,6 +357,7 @@ Util.wrapElement = u.we = function(e, wrap, attributes) {
 	return wrap;
 }
 
+/*u-animation.js*/
 Util.Animation = u.a = new function() {
 	this.support = function() {
 		var node = document.createElement("div");
@@ -484,6 +488,7 @@ Util.Animation = u.a = new function() {
 	}
 }
 
+/*u-events.js*/
 Util.Events = u.e = new function() {
 	this.event_pref = typeof(document.ontouchmove) == "undefined" ? "mouse" : "touch";
 	this.kill = function(event) {
@@ -934,6 +939,7 @@ Util.Events = u.e = new function() {
 	}
 }
 
+/*u-string.js*/
 Util.cutString = function(string, length) {
 	var matches, i;
 	if(string.length <= length) {
@@ -994,6 +1000,7 @@ Util.stringOr = function(value, replacement) {
 		return replacement ? replacement : "";
 	}	
 }
+/*u-system.js*/
 Util.explorer = function(version, scope) {
 	if(document.all) {
 		var undefined;
@@ -1076,6 +1083,7 @@ Util.osx = function() {
 	return (navigator.userAgent.indexOf("OS X") >= 0) ? true : false;
 }
 
+/*u-position.js*/
 Util.absoluteX = u.absX = function(e) {
 	if(e.offsetParent) {
 		return e.offsetLeft + u.absX(e.offsetParent);
@@ -1143,6 +1151,7 @@ Util.pageScrollY = u.scrollY = function() {
 	return window.pageYOffset;
 }
 
+/*u-cookie.js*/
 Util.saveCookie = function(name, value) {
 	document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) +";"
 }
@@ -1157,6 +1166,7 @@ Util.delCookie = function(name) {
 	document.cookie = encodeURIComponent(name) + "=;expires=Thu, 01-Jan-70 00:00:01 GMT";
 }
 
+/*u-image.js*/
 Util.Image = u.i = new function() {
 	this.load = function(e, src) {
 		var image = new Image();
@@ -1182,6 +1192,7 @@ Util.Image = u.i = new function() {
 	}
 }
 
+/*u-timer.js*/
 Util.Timer = u.t = new function() {
 	this.actions = new Array();
 	this.objects = new Array();
@@ -1225,6 +1236,7 @@ Util.Timer = u.t = new function() {
 	}
 }
 
+/*u-hash.js*/
 Util.Hash = u.h = new function() {
 	this.catchEvent = function(callback, node) {
 		this.node = node;
@@ -1293,6 +1305,7 @@ Util.Hash = u.h = new function() {
 	}
 }
 
+/*u-link.js*/
 Util.link = function(e) {
 	var a = (e.nodeName.toLowerCase() == "a" ? e : u.qs("a", e));
 	u.addClass(e, "link");
@@ -1301,6 +1314,7 @@ Util.link = function(e) {
 	u.e.click(e);
 }
 
+/*u-request.js*/
 Util.createRequestObject = function(type) {
 	var request_object = false;
 		try {
@@ -1465,6 +1479,7 @@ Util.validateResponse = function(response){
 	}
 }
 
+/*u-init-static.js*/
 Util.Objects = u.o = new Object();
 Util.init = function(scope) {
 	var i, e, elements, ij_value;
@@ -1480,6 +1495,7 @@ Util.init = function(scope) {
 	}
 }
 
+/*u-form.js*/
 Util.Form = u.f = new function() {
 	this.getParams = function(form, type) {
 		var i, input, select, textarea, param;
@@ -1514,6 +1530,7 @@ Util.Form = u.f = new function() {
 	}
 }
 
+/*i-page.js*/
 Util.Objects["page"] = new function() {
 	this.init = function(page, event) {
 		var i;
@@ -1614,6 +1631,7 @@ u.e.addEvent(window, "load", function(event) {u.o.page.init(u.qs("#page"), event
 function trackEvent(eventId) {
 }
 
+/*i-front.js*/
 Util.Objects["front"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -1632,6 +1650,7 @@ Util.Objects["front"] = new function() {
 	}
 }
 
+/*i-choose.js*/
 Util.Objects["choose"] = new function() {
 	this.init = function(scene) {
 		var i, node;
@@ -1886,6 +1905,7 @@ Util.Objects["choose"] = new function() {
 	}
 }
 
+/*i-picked.js*/
 Util.Objects["picked"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -1990,6 +2010,7 @@ Util.Objects["picked"] = new function() {
 	}
 }
 
+/*i-info.js*/
 Util.Objects["info"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -2012,6 +2033,7 @@ Util.Objects["info"] = new function() {
 	}
 }
 
+/*i-tip.js*/
 Util.Objects["tip"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -2069,6 +2091,7 @@ Util.Objects["tip"] = new function() {
 		scene.ready();
 	}
 }
+/*i-participant.js*/
 Util.Objects["participant"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -2148,6 +2171,7 @@ Util.Objects["participant"] = new function() {
 		scene.ready();
 	}
 }
+/*i-thanks.js*/
 Util.Objects["thanks"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -2182,6 +2206,7 @@ Util.Objects["thanks"] = new function() {
 	}
 }
 
+/*i-dressgame.js*/
 Util.Objects["dressgame"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
